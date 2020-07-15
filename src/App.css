@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+/* Simple browser reset */
+* {
+  box-sizing: border-box;
+}
+
+html,
+
+body {
+  padding-top: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  padding: 10px;
+}
+
+footer {
+  background: #373638;
+  padding: 30px;
+  text-align: center;
+  color: #d8d8d8;
+  position: absolute;
+  width:100%;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+}
+nav ul li a {
+  color: rgb(99, 99, 99);
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 3px;
+  transition: 0.3 ease all;
+}
+
+nav ul li a:hover {
+  background: #ffba43;
+  color: white;
+  text-decoration: none;
+}
+
+nav h3{
+  color: #30015f;
+}
+
+.hero__title {
+  font-size: 80px;
+  margin: 0;
+  font-family: "Merriweather", serif;
+}
+
+.hero__subtitle {
+  font-size: 40px;
+  font-style: italic;
+}
+
+.hero{
+  min-height: 600px;
+  text-align: center;
+  background-image: linear-gradient(to bottom right, #30015f, rgb(85, 165, 211));
+  background-size: cover;
+}
+
+.hero__content{
+  color: #ffffff;
+  padding-top: 50px;
+}
+
+.hero__content a{
+  display: inline-block; color: #fff;
+  border:3px solid #fff;
+  border-radius: 3px;
+  padding: 15px 30px;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 28px;
+  transition: transform 1s;
+}
+
+.hero__content a:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.features__box-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features__box{
+  text-align: center;
+  flex: 1;
+  margin-left: 5px;
+}
+
+.features__box img {
+  margin-bottom: 12px;
+  width: 120px;
+}
+
+.features__box h5 {
+  font-size: 25px;
+  color: #999;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+/* Icon */
+#icon {
+  display: inline-block;
+  color: #fff;
+  width: 49%;
+}
+
+#icon img {
+  width: 50px;
+  border-radius: 3px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Basic site section */
+.features {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.features__header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.features__header h2 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #777;
+}
+
+@media (max-width: 700px) {
+  .features__box-wrapper{
+    flex-wrap: wrap;
+  }
+  .features__box {
+    flex: 1 100%;
+  }
+}
+
+.user {
+  background-image: url('./background.png');
+  background-size: cover;
+  min-height: 700px;
+}
+
+.form__container{
+  background-color: white;
+  margin: 0;
+  height: 450px;
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.form__container p{
+  color: #777;
+}
+
+.user__content{
+  padding: 30px;
+}
+
+.user__content h2{
+  text-align: center;
+}
+
+.user__content Button{
+  width: 92%;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.user__content p{
+  text-align: right;
+  font-size: 15px;
+}
+
+.user__content h5{
+  padding-top: 30px;
+  text-align: center;
+  font-size: 15px;
+  color: #373638;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.user__content h6{
+  text-align: center;
+  font-size: 15px;
+  color: #373638;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.stocks__banner {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  height: 85vh;
+  text-align: center;
+  background-image: url('./background.png');
+  background-size: cover;
+}
+
+.stocks__banner h2{
+  color: white;
+  font-size: 40px;
+  margin: 0;
+  font-family: "Merriweather", serif;
+}
+
+.stocks__banner h6{
+  color: white;
+  font-size: 15px;
+  margin: 0;
+  font-family: "Merriweather", serif;
+}
+
+.quotes__banner {
+  padding-top: 30px;
+  height: 185vh;
+  text-align: center;
+  color: white;
+  background-image: url('./background2.png');
+  background-size: cover;
+}
+
+.quotes__banner h2{
+  color: white;
+  font-size: 40px;
+  margin: 0;
+  font-family: "Merriweather", serif;
+}
+
+.quotes__banner h6{
+  color: white;
+  font-size: 15px;
+  margin: 0;
+  font-family: "Merriweather", serif;
+}
+
+.quotes__banner__loggedout {
+  padding-top: 30px;
+  height: 85vh;
+  text-align: center;
+  color: white;
+  background-image: url('./background2.png');
+  background-size: cover;
+}
+
+.quotes__banner__loggedout h2{
+  color: white;
+  font-size: 40px;
+  margin: 0;
+  font-family: "Merriweather", serif;
+}
+
+.quotes__banner__loggedout h6{
+  color: white;
+  font-size: 15px;
+  margin: 0;
+  font-family: "Merriweather", serif;
+}
+
+.quotes__title h1{
+  color: white;
+  font-size: 30px;
+  text-align: left;
+  margin: 0;
+  font-family: "Merriweather", serif;
+}
+
+.quotes__title h5{
+  color: white;
+  font-size: 15px;
+  text-align: left;
+  font-family: "Merriweather", serif;
+  padding-top: 8px;
+}
+
+.quotes__title h6{
+  color: white;
+  background-color: #35294dc2;
+  border-radius: 10px;
+  width: 250px;
+  font-size: 15px;
+  text-align: left;
+  font-family: "Merriweather", serif;
+}
+
+.quotes__title input{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.quotes__title button{
+  font-size: 15px;
+  border-radius: 15px;
+}
+
+.quotes__title button:hover {
+  background-color: #ffba43;
+  color: white;
+}
+
+.history__banner {
+  padding-top: 30px;
+  height: 300px;
+  text-align: center;
+  color: white;
+  background-image: url('./background.png');
+  background-size: cover;
+}
+
+.history__banner h2{
+  color: white;
+  font-size: 40px;
+  margin: 0;
+  font-family: "Merriweather", serif;
+}
+
+.history__banner h6{
+  color: white;
+  font-size: 15px;
+  margin: 0;
+  font-family: "Merriweather", serif;
+}
+
+.stocksFilter .ag-theme-balham{
+  margin-top: 10px;
+  height: 400px;
+  padding-left: 29%;
+  padding-right: 29%;
+}
+
+.quotesFilter .ag-theme-balham{
+  margin-top: 10px;
+  height: 400px;
+  padding-left: 24.9%;
+  padding-right: 24.9%;
+}
+
+.searchBarDropdown{
+  width: 20px;
+}
+
+.searchOptions{
+  margin-left:20%;
+  padding-bottom: 10px;
+}
+
+.searchOptions h5{
+  color: white;
+  font-family: "Merriweather", serif;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.Chart{
+  background-color: white;
+}
